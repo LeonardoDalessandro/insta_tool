@@ -1,0 +1,25 @@
+{
+  "name": "insta_tool",
+  "version": "1.0.0",
+  "description": "Instagram bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "nodemon ."
+  },
+  "keywords": [
+    "instagram"
+  ],
+  "author": "Leonardo D'Alessandro",
+  "license": "MIT",
+  "dependencies": {
+    "algorithmia": "^0.3.10",
+    "express": "^4.17.1",
+    "gm": "^1.23.1",
+    "googleapis": "^59.0.0",
+    "image-downloader": "^4.0.1",
+    "readline-sync": "^1.4.10",
+    "sbd": "^1.0.18",
+    "watson-developer-cloud": "^4.0.1"
+  }
+}
