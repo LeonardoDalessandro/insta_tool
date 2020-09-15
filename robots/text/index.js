@@ -7,8 +7,8 @@ const state = require('../state.js')
 async function robot() {
   console.log('> [text-robot] Starting...')
 
-  //await fetchContent()
-  //await sanitizeContent()
+  await fetchContent()
+  await sanitizeContent()
   await arrayfyContent()
 
   console.log('> [text-robot] Done')  
