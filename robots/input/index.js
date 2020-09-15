@@ -1,32 +1,13 @@
-const inputUtils = require('./input.utils.js')
-const state = require('./state.js')
+const inputUtils = require('./_utils.js')
+const data = require('./_data.js')
+const state = require('../state.js')
 
 function robot() {
   const content = {
     maximumSentences: 7
   }
 
-  const questionObj = {
-    stringQuestions: {
-      searchTerm: {
-        question: 'Type a Wikipedia search term: '
-      }
-    },
-    optionQuestions: {
-      lang: {
-        options: ['it', 'eng', 'pt'],
-        question: 'Choose one option: '
-      },
-      media: {
-        options: ['Wikipedia', 'Medium'],
-        question: 'Choose one option: '
-      },      
-      prefix: {
-        options: ['Who is', 'What is', 'The history of'],
-        question: 'Choose one option: '
-      }
-    }    
-  }
+  const inputObj = data.initData
 
 
   // TODO: refatoring
@@ -79,28 +60,28 @@ function robot() {
   
 
   function askAndReturnSearchTerm() {
-    const question = questionObj.stringQuestions.searchTerm.question
+    const question = inputObj.stringQuestions.searchTerm.question
     const answer = inputUtils.askAndReturnString(question)
     return answer
   }
 
   function askAndReturnLang() {
-    const optAnswer = questionObj.optionQuestions.lang.options
-    const question = questionObj.optionQuestions.lang.question
+    const optAnswer = inputObj.optionQuestions.lang.options
+    const question = inputObj.optionQuestions.lang.question
     const answer = inputUtils.askAndReturnOptions(optAnswer, question)
     return answer
   }
 
   function askAndReturnSource() {
-    const optAnswer = questionObj.optionQuestions.media.options
-    const question = questionObj.optionQuestions.media.question
+    const optAnswer = inputObj.optionQuestions.media.options
+    const question = inputObj.optionQuestions.media.question
     const answer = inputUtils.askAndReturnOptions(optAnswer, question)
     return answer
   }
 
   function askAndReturnPrefix() {
-    const optAnswer = questionObj.optionQuestions.prefix.options
-    const question = questionObj.optionQuestions.prefix.question
+    const optAnswer = inputObj.optionQuestions.prefix.options
+    const question = inputObj.optionQuestions.prefix.question
     const answer = inputUtils.askAndReturnOptions(optAnswer, question)
     return answer
   }

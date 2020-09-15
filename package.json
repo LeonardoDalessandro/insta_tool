@@ -17,6 +17,7 @@
     "express": "^4.17.1",
     "gm": "^1.23.1",
     "googleapis": "^59.0.0",
+    "ibm-watson": "^5.7.0",
     "image-downloader": "^4.0.1",
     "readline-sync": "^1.4.10",
     "sbd": "^1.0.18",

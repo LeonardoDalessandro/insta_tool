@@ -65,6 +65,7 @@ credentials/algorithmia.json
 credentials/watson-nlu.json
 credentials/google.search.json
 
+# Generated Content
 content.json
 
 content/*.png
@@ -74,3 +75,5 @@ content/*.mov
 Adobe After Effects Auto-Save
 template.aep Logs
 .DS_Store
+
+package-lock.json
