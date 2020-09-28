@@ -52,6 +52,8 @@ function robot() {
   content.media = askAndReturnSource()
   content.searchTerm = askAndReturnSearchTerm()
   content.prefix = askAndReturnPrefix()
+  content.template = askAndReturnTemplate()
+  content.colorThemeRGB = [parseInt(askAndReturnColorThemeRED()),parseInt(askAndReturnColorThemeGREEN()),parseInt(askAndReturnColorThemeBLUE())]
   console.log('> [input-robot] Status: works')
   console.log('> [input-robot] Collected data: ' + JSON.stringify(content))
   state.save(content)
@@ -83,6 +85,29 @@ function robot() {
     const optAnswer = inputObj.optionQuestions.prefix.options
     const question = inputObj.optionQuestions.prefix.question
     const answer = inputUtils.askAndReturnOptions(optAnswer, question)
+    return answer
+  }
+
+  function askAndReturnTemplate() {
+    const optAnswer = inputObj.optionQuestions.template.options
+    const question = inputObj.optionQuestions.template.question
+    const answer = inputUtils.askAndReturnOptions(optAnswer, question)
+    return answer
+  }
+
+  function askAndReturnColorThemeRED() {
+    const question = inputObj.stringQuestions.colorThemeRGBred.question
+    const answer = inputUtils.askAndReturnString(question)
+    return answer
+  }
+  function askAndReturnColorThemeGREEN() {
+    const question = inputObj.stringQuestions.colorThemeRGBgreen.question
+    const answer = inputUtils.askAndReturnString(question)
+    return answer
+  }
+  function askAndReturnColorThemeBLUE() {
+    const question = inputObj.stringQuestions.colorThemeRGBblue.question
+    const answer = inputUtils.askAndReturnString(question)
     return answer
   }
 }

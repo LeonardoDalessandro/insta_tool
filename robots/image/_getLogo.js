@@ -13,7 +13,7 @@ async function getlogo() {
 
 
   async function fetchLogoImages() {
-    const content = state.load()
+    const content = await state.load()
 
     let query
     query = `${content.searchTerm} logo`
@@ -31,15 +31,21 @@ async function getlogo() {
 
 
   async function saveImages() {
-    const content = state.load()
+    const content = await state.load()
     const images = content.downloadedImages.logo.suggestions
     const tempArray = [] 
 
-    console.log(images)
-
     for (let i = 0; i < images.length; i++) {
-      const imageUrl = images[i]
+      const imageUrl = images[i].link
+      const imageWidth = images[i].size.width
+      const imageHeight = images[i].size.height
       const imageName = `logo-${i}-original.png`
+
+      const selectedObject = {
+        link: imageUrl,
+        width: imageWidth,
+        height: imageHeight
+      }
 
       try {
         if (tempArray.includes(imageUrl)) {
@@ -48,7 +54,7 @@ async function getlogo() {
 
         await downloader.downloadImage(imageUrl, imageName)
         tempArray.push(imageUrl)
-        content.downloadedImages.logo.image = imageName
+        content.downloadedImages.logo.selectedImage = selectedObject
 
         break
       } catch(error) {

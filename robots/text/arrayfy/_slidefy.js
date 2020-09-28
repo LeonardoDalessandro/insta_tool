@@ -1,8 +1,8 @@
 const sentenceBoundaryDetection = require('sbd')
 const state = require('../../state')
 
-function  breakContentIntoSentences() {
-  const content = state.load()
+async function breakContentIntoSentences() {
+  const content = await state.load()
   content.slides = []
 
   const sentences = sentenceBoundaryDetection.sentences(content.sourceContentSanitized)
@@ -18,8 +18,8 @@ function  breakContentIntoSentences() {
   state.save(content)
 }
 
-function  limitMaximumSentences(text) {
-  const content = state.load()
+async function limitMaximumSentences() {
+  const content = await state.load()
   content.slides = content.slides.slice(0, content.maximumSentences)
 
   state.save(content)

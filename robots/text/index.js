@@ -2,8 +2,6 @@ const fetchContent = require('./fetch/index.js')
 const sanitizeContent = require('./sanitize/index.js')
 const arrayfyContent = require('./arrayfy/index.js')
 
-const state = require('../state.js')
-
 async function robot() {
   console.log('> [text-robot] Starting...')
 

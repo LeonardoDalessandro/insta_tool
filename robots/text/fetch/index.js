@@ -5,19 +5,21 @@ const initInputData = require('../../input/_data')
 const state = require('../../state.js')
 
 async function fetchContent() {
-  const content = state.load()
+  const content = await state.load()
   const mediaArray = initInputData.initData.optionQuestions.media.options
   const selectedMedia = content.media
   console.log('> [text-robot] Check user preference')
   console.log('> [text-robot] Allow media: ' + mediaArray)
-  console.log('> [text-robot] Selected media: ' + selectedMedia)
+  console.log(`> [text-robot] Selected media: ${selectedMedia}`)
+
+  //await wikipedia.getText()
 
   switch (selectedMedia) {
     case mediaArray[0]:
-      wikipedia.getText()
+      await wikipedia.getText()
       break
     case mediaArray[1]:
-      medium.getText()
+      await medium.getText()
       break
   }
 
