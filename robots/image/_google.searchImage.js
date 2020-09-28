@@ -13,7 +13,12 @@ async function fetchAndReturnImagesLinks(query) {
   })
 
   const imagesUrl = response.data.items.map((item) => {
-    return item.link
+    const imageObj = {}
+    imageObj.link = item.link
+    imageObj.size = {}
+    imageObj.size.width = item.image.width
+    imageObj.size.height = item.image.height
+    return imageObj
   })
 
   return imagesUrl

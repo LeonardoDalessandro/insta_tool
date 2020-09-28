@@ -6,7 +6,7 @@ const state = require('../../state')
 async function getText () {
   console.log('> [text-robot] Starting Fetching data from Algorithmia to get text content')
 
-  const content = state.load()
+  const content = await state.load()
 
   const input = {
     "articleName": content.searchTerm,

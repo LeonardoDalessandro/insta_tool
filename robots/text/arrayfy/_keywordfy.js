@@ -16,7 +16,7 @@ const nlu = new NaturalLanguageUnderstandingV1({
 const state = require('../../state')
 
 async function fetchKeywordsOfAllSentences() {
-  const content = state.load()
+  const content = await state.load()
 
   console.log('> [text-robot] Starting to fetch keywords from Watson')
 
