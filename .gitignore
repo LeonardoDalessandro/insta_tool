@@ -72,6 +72,13 @@ content/*.png
 content/*.jpg
 content/*.js
 content/*.mov
+content/*.json
+content/*.xml
+content/*.vbs
+content/*.jsx
+content/*.ai
+content/*.psd
+content/img/
 Adobe After Effects Auto-Save
 template.aep Logs
 .DS_Store
