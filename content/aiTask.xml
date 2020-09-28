@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_svg "http://www.w3.org/2000/svg">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+]>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="0px" height="0px" viewBox="0 0 0 0" style="overflow:visible;" xml:space="preserve">
+  <variableSets  xmlns="&ns_vars;">
+    <variableSet  locked="none" varSetName="binding1">
+      <variables>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="prefix"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="searchTerm"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="text1"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titlePost"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="text2"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="text3"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="text4"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="text5"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="text6"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="test7"></variable>
+      </variables>
+      <v:sampleDataSets  xmlns="http://ns.adobe.com/GenericCustomNamespace/1.0/" xmlns:v="http://ns.adobe.com/Variables/1.0/">
+        <v:sampleDataSet  dataSetName="templateMinimalInsta">
+          <prefix>
+            <p>What is</p>
+          </prefix>
+          <searchTerm>
+            <p>Vue.js</p>
+          </searchTerm>
+          <titlePost>
+            <p>Vue.js - What is</p>
+          </titlePost>
+          <text1>
+            <p>Vue.js (informalmente chamado de Vue; pronunciado /vjuː/) é um framework JavaScript de código-aberto, focado no desenvolvimento de interfaces de usuário e aplicativos de página única. 123456789</p>
+          </text1>    
+          <text2>
+            <p>O Vue.js conta com uma arquitetura que pode ser adotada de forma incremental, e que foca na renderização declarativa e na composição de componentes.</p>
+          </text2>
+          <text3>
+            <p>Funcionalidades avançadas necessárias para aplicações complexas (como encaminhamento, gestão de estados e automação de compilação) são oferecidas por meio de bibliotecas e pacotes de suporte mantidos oficialmente , sendo o Nuxt.js como uma das soluções mais populares.</p>
+          </text3>
+          <text4>
+            <p>O Vue foi criado pelo desenvolvedor independente chinês Evan You, após trabalhar para o Google usando o AngularJS em vários projetos.</p>
+          </text4>
+          <text5>
+            <p>Posteriormente, ele resumiu o pensamento por trás do processo de criação do Vue: "Pensei, e se eu pudesse retirar somente a parte que realmente gostava do Angular e criar algo muito leve?".</p>
+          </text5>
+          <text6>
+            <p>O primeiro commit ao código-fonte do projeto data de julho de 2013, e o framework foi lançado oficialmente em fevereiro do ano seguinte, em 2014.</p>
+          </text6>
+          <test7>
+            <p>Os componentes Vue extendem elementos HTML básicos para encapsular código reutilizável.</p>
+          </test7>
+        </v:sampleDataSet>
+      </v:sampleDataSets>
+    </variableSet>
+  </variableSets>
+</svg>
+  
