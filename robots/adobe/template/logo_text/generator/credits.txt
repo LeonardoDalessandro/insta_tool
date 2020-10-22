@@ -1,0 +1,10 @@
+[IA start - CREDITS]
+- Fonte de conteúdo: Wikipedia
+- Imagem do logotipo: wikipedia.org
+- Processamento de conteúdo: insta_tool BETA (https://github.com/LeonardoDalessandro/insta_tool)
+- Arquivos .jpg: Adobe Illustrator
+
+Based on video bot by @filipedeschamps 
+[IA finish - CREDITS]
+
+@leonardo_d_alessandro @automacao @bot @typescript @ts @javascript

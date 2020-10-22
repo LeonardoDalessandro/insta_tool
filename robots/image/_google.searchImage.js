@@ -3,11 +3,13 @@ const customSearch = google.customsearch('v1')
 
 const googleSearchCredentials = require('../../credentials/google.search.json')
 
-async function fetchAndReturnImagesLinks(query) {
+async function fetchAndReturnImagesLinks(query, ext, bg) {
   const response = await customSearch.cse.list({
     auth: googleSearchCredentials.apiKey,
     cx: googleSearchCredentials.searchEngineId,
     q: query,
+    fileType: ext,
+    imgColorType: bg,
     searchType: 'image',
     num: 5
   })

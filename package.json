@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node .",
-    "test": "nodemon ."
+    "test": "nodemon .",
+    "jest": "jest"
   },
   "keywords": [
     "instagram"
@@ -19,8 +20,21 @@
     "googleapis": "^59.0.0",
     "ibm-watson": "^5.7.0",
     "image-downloader": "^4.0.1",
+    "jest": "^26.5.3",
     "readline-sync": "^1.4.10",
     "sbd": "^1.0.18",
     "watson-developer-cloud": "^4.0.1"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverageFrom": [
+      "**/*.{js}",
+      "!**/node_modules/**"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/content/",
+      "<rootDir>/credentials/",
+      "<rootDir>/node_modules/"
+    ]
   }
 }

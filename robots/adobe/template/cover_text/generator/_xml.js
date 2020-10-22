@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
+function build(slides, slideLenght, mainTitle, author) {
+
+// GENERAL
+const slideTemp = []
+for (let i = 0; i < slideLenght; i++) {
+  if (slides[i] != undefined) {
+    const slideSentence = slides[i].text
+    slideTemp.push(slideSentence)
+  } else {
+    const placeholder = '[..]'
+    slideTemp.push(placeholder)
+  }
+}
+
+
+  const XMLfile = `<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
 	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
 	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
@@ -30,38 +45,46 @@
       <v:sampleDataSets  xmlns="http://ns.adobe.com/GenericCustomNamespace/1.0/" xmlns:v="http://ns.adobe.com/Variables/1.0/">
         <v:sampleDataSet  dataSetName="templateMinimalInsta">
           <author>
-						<p>Leo Inthapichai</p>
+						<p>${author}</p>
 					</author>
 					<titleMain>
-						<p>Little's Law Applied in Agile and Knowledge Work</p>
+						<p>${mainTitle}</p>
 					</titleMain>
 					<titleSlide1>
-						<p>Little's Law Applied in Agile and Knowledge Work</p>
+						<p>${mainTitle}</p>
 					</titleSlide1>					
 					<titleSlide2>
-						<p>Little's Law Applied in Agile and Knowledge Work</p>
+						<p>${mainTitle}</p>
 					</titleSlide2>
 					<titleSlide3>
-						<p>Little's Law Applied in Agile and Knowledge Work</p>
+						<p>${mainTitle}</p>
 					</titleSlide3>
 					<titleSlide4>
-						<p>Little's Law Applied in Agile and Knowledge Work</p>
+						<p>${mainTitle}</p>
 					</titleSlide4>
 					<sentenceSlide1>
-						<p>Have you ever been in a team where everyone is working as fast as they can but things just don’t seem to get finished.</p>
+						<p>${slideTemp[0]}</p>
 					</sentenceSlide1>
 					<sentenceSlide2>
-						<p>By the end of it, you will understand the relationship between throughput, work in process and cycle time in a stable system.</p>
+						<p>${slideTemp[1]}</p>
 					</sentenceSlide2>
 					<sentenceSlide3>
-						<p>Consider a 2 person operation for a takeaway coffee cart business.</p>
+						<p>${slideTemp[2]}</p>
 					</sentenceSlide3>
 					<sentenceSlide4>
-						<p>[..]</p>
+						<p>${slideTemp[3]}</p>
 					</sentenceSlide4>
         </v:sampleDataSet>
       </v:sampleDataSets>
     </variableSet>
   </variableSets>
 </svg>
-  
+  `
+
+  return XMLfile
+}
+
+
+module.exports = {
+  build
+}

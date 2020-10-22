@@ -1,11 +1,28 @@
+const state = require('../state')
 const fetchImages = require('./_getLogo.js')
+const initInputData = require('../input/_data')
 
 async function robot() {
-  console.log('> [text-robot] Starting...')
+  console.log('> [image-robot] Starting...')
 
-  await fetchImages.getlogo()
+  const content = await state.load()
+  const templateArray = initInputData.initData.optionQuestions.template.options
+  const selectedTemplate = content.template
 
-  console.log('> [text-robot] Done')  
+  switch(selectedTemplate) {
+    case templateArray[0]: {
+        await fetchImages.getlogo()
+        break;
+    }
+    case templateArray[1]: {
+        console.log("> [image-robot] This template don't require images")
+        break;
+    }
+  }
+
+  
+
+  console.log('> [image-robot] Done')  
 }
 
 module.exports = robot

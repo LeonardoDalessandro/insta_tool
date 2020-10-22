@@ -1,4 +1,4 @@
-const medium = require('./_medium.js')
+const custom = require('./_custom.js')
 const wikipedia = require('./_wikipedia.js')
 const initInputData = require('../../input/_data')
 
@@ -6,20 +6,19 @@ const state = require('../../state.js')
 
 async function fetchContent() {
   const content = await state.load()
-  const mediaArray = initInputData.initData.optionQuestions.media.options
-  const selectedMedia = content.media
-  console.log('> [text-robot] Check user preference')
-  console.log('> [text-robot] Allow media: ' + mediaArray)
-  console.log(`> [text-robot] Selected media: ${selectedMedia}`)
+  const templates = initInputData.initData.optionQuestions.template.options
+  const selectedTemplate = content.template
+  console.log('> [text-robot] [fetch] Check user preference')
+  console.log('> [text-robot] [fetch] Allow media: ' + templates)
+  console.log(`> [text-robot] [fetch] Selected media: ${selectedTemplate}`)
 
-  //await wikipedia.getText()
 
-  switch (selectedMedia) {
-    case mediaArray[0]:
+  switch (selectedTemplate) {
+    case templates[0]:
       await wikipedia.getText()
       break
-    case mediaArray[1]:
-      await medium.getText()
+    case templates[1]:
+      await custom.getText()
       break
   }
 

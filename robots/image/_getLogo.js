@@ -22,8 +22,10 @@ async function getlogo() {
     content.downloadedImages = {}
     content.downloadedImages.logo = {}
     content.downloadedImages.logo.query = query
+    const ext = 'png'
+    const bg = 'trans'
 
-    const googleResponse = await googleSearchImage.fetchAndReturnImagesLinks(query)
+    const googleResponse = await googleSearchImage.fetchAndReturnImagesLinks(query, ext, bg)
     content.downloadedImages.logo.suggestions = googleResponse
 
     state.save(content)
@@ -39,7 +41,7 @@ async function getlogo() {
       const imageUrl = images[i].link
       const imageWidth = images[i].size.width
       const imageHeight = images[i].size.height
-      const imageName = `logo-${i}-original.png`
+      const imageName = `logo-1-original.png`
 
       const selectedObject = {
         link: imageUrl,

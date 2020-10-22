@@ -1,19 +1,16 @@
-function build(slides, logo, slideLenght, searchTerm, prefix) {
-
-
+function build(slides, slideLenght, searchTerm, prefix) {
 
 // GENERAL
-const slidesLenghtInternal = slideLenght
 const slideTemp = []
-
-for (let i = 0; i < slidesLenghtInternal; i++) {
-  let slideSentence
-
-  slideSentence = slides[i].text
-  
-  slideTemp.push(slideSentence)
+for (let i = 0; i < slideLenght; i++) {
+  if (slides[i] != undefined) {
+    const slideSentence = slides[i].text
+    slideTemp.push(slideSentence)
+  } else {
+    const placeholder = '[..]'
+    slideTemp.push(placeholder)
+  }
 }
-
 
 // COVER
 const title = searchTerm
@@ -42,8 +39,14 @@ const fullTitle = `${title} - ${subTitle}`
       <variables>
         <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="prefix"></variable>
         <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="searchTerm"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titlePost1"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titlePost2"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titlePost3"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titlePost4"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titlePost5"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titlePost6"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titlePost7"></variable>
         <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="text1"></variable>
-        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titlePost"></variable>
         <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="text2"></variable>
         <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="text3"></variable>
         <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="text4"></variable>
@@ -59,11 +62,8 @@ const fullTitle = `${title} - ${subTitle}`
           <searchTerm>
             <p>${title}</p>
           </searchTerm>
-          <titlePost>
-            <p>${fullTitle}</p>
-          </titlePost>
           <text1>
-            <p>${slideTemp[0]} 123456789</p>
+            <p>${slideTemp[0]}</p>
           </text1>    
           <text2>
             <p>${slideTemp[1]}</p>
@@ -83,6 +83,27 @@ const fullTitle = `${title} - ${subTitle}`
           <test7>
             <p>${slideTemp[6]}</p>
           </test7>
+          <titlePost1>
+					  <p>${fullTitle}</p>
+          </titlePost1>
+          <titlePost2>
+            <p>${fullTitle}</p>
+          </titlePost2>
+          <titlePost3>
+            <p>${fullTitle}</p>
+          </titlePost3>
+          <titlePost4>
+            <p>${fullTitle}</p>
+          </titlePost4>
+          <titlePost5>
+            <p>${fullTitle}</p>
+          </titlePost5>
+          <titlePost6>
+            <p>${fullTitle}</p>
+          </titlePost6>
+          <titlePost7>
+            <p>${fullTitle}</p>
+          </titlePost7>
         </v:sampleDataSet>
       </v:sampleDataSets>
     </variableSet>

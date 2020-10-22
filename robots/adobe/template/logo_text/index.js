@@ -18,12 +18,12 @@ async function run() {
 
   async function generateXML(){
     console.log(`> [adobe-robot] Writing .xml structure data ...`)  
-    return fs.writeFileSync(pathXML, xmlCode.build(slides, logo, slideLenght, searchTerm, prefix))
+    return fs.writeFileSync(pathXML, xmlCode.build(slides, slideLenght, searchTerm, prefix))
   }
 
   async function generateVBS(){
     console.log(`> [adobe-robot] Writing .vbs structure data ...`)
-    return fs.writeFileSync(pathVBScript, vbsCode.build(logo, slideLenght, colorTheme))
+    return fs.writeFileSync(pathVBScript, vbsCode.build(logo, slides.length, colorTheme))
   }
 
   await generateXML()

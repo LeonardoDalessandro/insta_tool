@@ -3,15 +3,20 @@ const robots = {
   text: require('./robots/text/index.js'),
   image: require('./robots/image/index.js'),
   adobe: require('./robots/adobe/index.js'),
-  instagram: require('./robots/instagram.js')
+  //social: require('./robots/social/index.js')
 }
 
 async function start() {
-  //robots.input()
-  //await robots.text()
-  //await robots.image()
+  await robots.input()
+  await robots.text()
+  await robots.image()
   await robots.adobe()
-  //await robots.instagram()
+  //await robots.social()
 }
 
-start()
+try{
+  start()
+} catch (e) {
+  console.log('[index] Generic error')
+  console.error(e)
+}
