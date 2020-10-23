@@ -1,17 +1,22 @@
 const state = require('../state')
-const fetchImages = require('./_getLogo.js')
-const initInputData = require('../input/_data')
+const getOptionQuestionData = require('../input/initdata/_questions.select')
+
+const getlogo = require('./modules/_getLogo.js')
 
 async function robot() {
-  console.log('> [image-robot] Starting...')
+  console.log('> [image-robot] Starting...')  
 
   const content = await state.load()
-  const templateArray = initInputData.initData.optionQuestions.template.options
   const selectedTemplate = content.template
+
+  const initInputData = getOptionQuestionData.template
+  const templateArray = initInputData.options
 
   switch(selectedTemplate) {
     case templateArray[0]: {
-        await fetchImages.getlogo()
+        console.log('> [image-robot] [get logo] Starting...')
+        await getlogo()
+        console.log('> [image-robot] [get logo] Done')
         break;
     }
     case templateArray[1]: {
@@ -19,8 +24,6 @@ async function robot() {
         break;
     }
   }
-
-  
 
   console.log('> [image-robot] Done')  
 }

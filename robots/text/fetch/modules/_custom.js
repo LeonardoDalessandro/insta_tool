@@ -1,7 +1,10 @@
+/*
+** SUSPENDED
+*/
 const algorithmia = require('algorithmia')
-const algorithmiaApiKey = require('../../../credentials/algorithmia.json').apiKey
+const algorithmiaApiKey = require('../../../../credentials/algorithmia.json').apiKey
 
-const state = require('../../state')
+const state = require('../../../state')
 
 async function getText () {
   console.log('> [text-robot] [fetch - URL main text] Starting Fetching data from Algorithmia to get text content')
@@ -34,6 +37,4 @@ async function getText () {
   console.log('> [text-robot] [fetch - URL main text] Fetching done!')
 }
 
-module.exports = {
-  getText
-}
+module.exports = getText

@@ -1,8 +1,9 @@
 const sentenceBoundaryDetection = require('sbd')
-const state = require('../../state')
+const state = require('../../../state')
 
 async function breakContentIntoSentences() {
   const content = await state.load()
+  
   content.slides = []
 
   const sentences = sentenceBoundaryDetection.sentences(content.sourceContentSanitized)

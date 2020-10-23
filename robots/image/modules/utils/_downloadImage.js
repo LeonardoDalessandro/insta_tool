@@ -1,8 +1,8 @@
 const imageDownloader = require('image-downloader')
+
 const contentDir = './content/'
 
 async function downloadImage(url, fileName) {
-
   const options = {
     url,
     dest: contentDir+fileName
@@ -19,4 +19,4 @@ async function downloadImage(url, fileName) {
   return response
 }
 
-module.exports = {downloadImage}
+module.exports = downloadImage

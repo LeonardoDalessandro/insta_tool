@@ -1,9 +1,9 @@
 const google = require('googleapis').google
 const customSearch = google.customsearch('v1')
 
-const googleSearchCredentials = require('../../credentials/google.search.json')
+const googleSearchCredentials = require('../../../../credentials/google.search.json')
 
-async function fetchAndReturnImagesLinks(query, ext, bg) {
+async function fetchAndReturnImagesObjWithGoogle(query, ext, bg) {
   const response = await customSearch.cse.list({
     auth: googleSearchCredentials.apiKey,
     cx: googleSearchCredentials.searchEngineId,
@@ -27,5 +27,5 @@ async function fetchAndReturnImagesLinks(query, ext, bg) {
 }
 
 module.exports = {
-  fetchAndReturnImagesLinks
+  fetchAndReturnImagesObjWithGoogle
 }

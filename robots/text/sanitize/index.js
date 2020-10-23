@@ -1,4 +1,4 @@
-const utils = require('./_utils')
+const utils = require('./modules/_utils')
 
 async function sanitizeContent() {
   console.log('> [text-robot] [sanitize] Starting sanitize content')  

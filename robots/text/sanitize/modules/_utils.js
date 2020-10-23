@@ -1,4 +1,4 @@
-const state = require('../../state.js')
+const state = require('../../../state')
 
 async function removeBlankLinesAndMarkdown() {
   const content = await state.load()

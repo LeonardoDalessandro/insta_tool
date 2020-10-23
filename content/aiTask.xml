@@ -16,49 +16,73 @@
   <variableSets  xmlns="&ns_vars;">
     <variableSet  locked="none" varSetName="binding1">
       <variables>
-        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="author"></variable>
-        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titleMain"></variable>
-        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titleSlide1"></variable>
-        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titleSlide2"></variable>
-        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titleSlide3"></variable>
-        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titleSlide4"></variable>
-        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="sentenceSlide1"></variable>
-        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="sentenceSlide2"></variable>
-        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="sentenceSlide3"></variable>
-        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="sentenceSlide4"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="prefix"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="searchTerm"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titlePost1"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titlePost2"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titlePost3"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titlePost4"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titlePost5"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titlePost6"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titlePost7"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="text1"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="text2"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="text3"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="text4"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="text5"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="text6"></variable>
+        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="test7"></variable>
       </variables>
       <v:sampleDataSets  xmlns="http://ns.adobe.com/GenericCustomNamespace/1.0/" xmlns:v="http://ns.adobe.com/Variables/1.0/">
         <v:sampleDataSet  dataSetName="templateMinimalInsta">
-          <author>
-						<p>Leo Inthapichai</p>
-					</author>
-					<titleMain>
-						<p>Little's Law Applied in Agile and Knowledge Work</p>
-					</titleMain>
-					<titleSlide1>
-						<p>Little's Law Applied in Agile and Knowledge Work</p>
-					</titleSlide1>					
-					<titleSlide2>
-						<p>Little's Law Applied in Agile and Knowledge Work</p>
-					</titleSlide2>
-					<titleSlide3>
-						<p>Little's Law Applied in Agile and Knowledge Work</p>
-					</titleSlide3>
-					<titleSlide4>
-						<p>Little's Law Applied in Agile and Knowledge Work</p>
-					</titleSlide4>
-					<sentenceSlide1>
-						<p>Have you ever been in a team where everyone is working as fast as they can but things just don’t seem to get finished.</p>
-					</sentenceSlide1>
-					<sentenceSlide2>
-						<p>By the end of it, you will understand the relationship between throughput, work in process and cycle time in a stable system.</p>
-					</sentenceSlide2>
-					<sentenceSlide3>
-						<p>Consider a 2 person operation for a takeaway coffee cart business.</p>
-					</sentenceSlide3>
-					<sentenceSlide4>
-						<p>[..]</p>
-					</sentenceSlide4>
+          <prefix>
+            <p>What is</p>
+          </prefix>
+          <searchTerm>
+            <p>React.js</p>
+          </searchTerm>
+          <text1>
+            <p>O React (também denominado React.js ou ReactJS) é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário (frontend) em páginas web.</p>
+          </text1>    
+          <text2>
+            <p>É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais.</p>
+          </text2>
+          <text3>
+            <p>É utilizado nos sites da Netflix, Imgur, Feedly, Airbnb, SeatGeek, HelloSign, Walmart e outros</p>
+          </text3>
+          <text4>
+            <p>Em 2015, o Facebook anunciou o módulo React Native, que em conjunto com o React, possibilita o desenvolvimento de aplicativos para Android e iOS utilizando componentes de interface de usuário nativos de ambas plataformas, sem precisar recorrer ao HTML</p>
+          </text4>
+          <text5>
+            <p>Na pesquisa de 2018 sobre hábitos de desenvolvedores do site Stack Overflow, o React foi a terceira biblioteca ou framework mais citado pelos usuários e desenvolvedores profissionais, ficando atrás somente do Node.js e Angular, respectivamente.</p>
+          </text5>
+          <text6>
+            <p>[..]</p>
+          </text6>
+          <test7>
+            <p>[..]</p>
+          </test7>
+          <titlePost1>
+					  <p>React.js - What is</p>
+          </titlePost1>
+          <titlePost2>
+            <p>React.js - What is</p>
+          </titlePost2>
+          <titlePost3>
+            <p>React.js - What is</p>
+          </titlePost3>
+          <titlePost4>
+            <p>React.js - What is</p>
+          </titlePost4>
+          <titlePost5>
+            <p>React.js - What is</p>
+          </titlePost5>
+          <titlePost6>
+            <p>React.js - What is</p>
+          </titlePost6>
+          <titlePost7>
+            <p>React.js - What is</p>
+          </titlePost7>
         </v:sampleDataSet>
       </v:sampleDataSets>
     </variableSet>

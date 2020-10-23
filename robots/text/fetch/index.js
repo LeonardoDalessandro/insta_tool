@@ -1,24 +1,27 @@
-const custom = require('./_custom.js')
-const wikipedia = require('./_wikipedia.js')
-const initInputData = require('../../input/_data')
+const custom = require('./modules/_custom.js')
+const wikipedia = require('./modules/_wikipedia.js')
+const getOptionQuestionData = require('../../input/initdata/_questions.select')
 
 const state = require('../../state.js')
 
 async function fetchContent() {
   const content = await state.load()
-  const templates = initInputData.initData.optionQuestions.template.options
   const selectedTemplate = content.template
+
+  const initInputData = getOptionQuestionData.template
+  const templateArray = initInputData.options
+  
   console.log('> [text-robot] [fetch] Check user preference')
-  console.log('> [text-robot] [fetch] Allow media: ' + templates)
-  console.log(`> [text-robot] [fetch] Selected media: ${selectedTemplate}`)
-
-
   switch (selectedTemplate) {
-    case templates[0]:
-      await wikipedia.getText()
+    case templateArray[0]:
+      console.log('> [text-robot] [fetch] Get text for template: ' + selectedTemplate)
+      await wikipedia()
+      console.log('> [text-robot] [fetch] DONE')
       break
-    case templates[1]:
-      await custom.getText()
+    case templateArray[1]:
+      console.log('> [text-robot] [fetch] Get text for template: ' + selectedTemplate)
+      await custom()
+      console.log('> [text-robot] [fetch] DONE')
       break
   }
 

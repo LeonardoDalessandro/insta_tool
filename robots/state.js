@@ -1,15 +1,15 @@
-const fs = require('fs')
+const loadFile = require('../utils/utils.loadJSON')
+const saveFile = require('../utils/utils.saveJSON')
+
 const contentFilePath = './content/content.json'
 
 async function save(content) {
-  const contentString = JSON.stringify(content)
-  return fs.writeFileSync(contentFilePath, contentString)
+  await saveFile(contentFilePath, content)
 }
 
 async function load() {
-  const fileBuffer = fs.readFileSync(contentFilePath, 'utf-8')
-  const contentJson = JSON.parse(fileBuffer)
-  return contentJson
+  const contentFile = await loadFile(contentFilePath)
+  return contentFile
 }
 
 module.exports = {

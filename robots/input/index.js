@@ -1,7 +1,9 @@
-const interface = require('./interface/index')
+const getInputs = require('./inputs/index')
 
 async function robot() {
-  await interface()
+  console.log('> [input-robot] Starting...') 
+  await getInputs()
+  console.log('> [input-robot] Done') 
 }
 
 module.exports = robot

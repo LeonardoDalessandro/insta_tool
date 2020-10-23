@@ -2,7 +2,7 @@ const fs = require('fs')
 const xmlCode = require('./generator/_xml.js')
 const vbsCode = require('./generator/_vbs.js')
 
-const initInputData = require('../../../input/_data')
+const getOptionQuestionData = require('../../../input/initdata/_questions.select')
 const state = require('../../../state')
 
 const pathXML = './content/aiTask.xml'
@@ -18,7 +18,7 @@ async function run() {
   const author = content.author
   const category = content.category
 
-  const categoryArray = initInputData.initData.optionQuestions.articleCategory.options
+  const categoryArray = getOptionQuestionData.articleCategory.options
 
   switch(category) {
     case categoryArray[0]: {
