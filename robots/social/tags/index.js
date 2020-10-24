@@ -23,17 +23,15 @@ async function generateText(){
 
   switch(selectedTemplate) {
     case templateArray[0]: {
-        console.log('> [robot-social] [write tags file] Starting (logo template)...')
+        console.log('> [robot-social] [write tags file] Creating (logo template)...')
         const toPrint = await coverLogoTemplate(slides, slideLength)
         fs.writeFileSync(generatedFileFullPath, toPrint)
-        console.log('> [robot-social] [write tags file] Done')
         break;
     }
     case templateArray[1]: {
-        console.log('> [robot-social] [write tags file] Starting (resume article template) ...')
+        console.log('> [robot-social] [write tags file] Creating (resume article template) ...')
         const toPrint = await resumeArticleTemplate()
         fs.writeFileSync(generatedFileFullPath, toPrint)
-        console.log('> [robot-social] [write tags file] Done')
         break;
     }
   }
