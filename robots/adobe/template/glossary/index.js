@@ -14,32 +14,16 @@ async function run() {
 
   const slides = content.slides
   const slideLenght = content.maximumSentences
-  const mainTitle = content.title
-  const author = content.author
-  const category = content.category
-
-  const categoryArray = getOptionQuestionData.articleCategory.options
-
-  switch(category) {
-    case categoryArray[0]: {
-        template = 'AITemplateDicas.ai'
-        break;
-    }
-    case categoryArray[1]: {
-        template = 'AITemplate.ai'
-        break;
-    }
-  }
-
-
+  const mainTitle = content.searchTerm
+ 
   async function generateXML(){
     console.log(`> [adobe-robot] Writing .xml structure data ...`)  
-    return fs.writeFileSync(pathXML, xmlCode.build(slides, slideLenght, mainTitle, author))
+    return fs.writeFileSync(pathXML, xmlCode.build(slides, slideLenght, mainTitle))
   }
 
   async function generateVBS(){
     console.log(`> [adobe-robot] Writing .vbs structure data ...`)
-    return fs.writeFileSync(pathVBScript, vbsCode.build(slideLenght, template))
+    return fs.writeFileSync(pathVBScript, vbsCode.build())
   }
 
   await generateXML()

@@ -23,6 +23,11 @@ async function fetchContent() {
       await custom()
       console.log('> [text-robot] [fetch] DONE')
       break
+    case templateArray[2]:
+      console.log('> [text-robot] [fetch] Get text for template: ' + selectedTemplate)
+      await wikipedia()
+      console.log('> [text-robot] [fetch] DONE')
+      break
   }
 
 }

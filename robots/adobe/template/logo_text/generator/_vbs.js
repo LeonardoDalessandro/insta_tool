@@ -1,4 +1,4 @@
-function build(logo, slideLenght, colorTheme) {
+function build(logo, slideLength, colorTheme) {
 
 const localToolPath = "D:/www/TOOLS/insta/insta_tool"
 
@@ -9,7 +9,7 @@ const AIFullPath = localToolPath+AIfileDir+AIfileName
 // GENERAL
 const instaFrame = (1080.0).toFixed(1)
 const color = colorTheme
-const slidesLenghtInternal = slideLenght
+const slidesLenghtInternal = slideLength
 const slidesLenght = slidesLenghtInternal + 2
 
 // COVER

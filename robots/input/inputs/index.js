@@ -1,6 +1,7 @@
 const getInitInputs = require('./modules/_init')
 const getLogoTextInputs = require('./modules/_logo_text')
 const getResumeArticleInputs = require('./modules/_resumeArticle')
+const getGlossaryInputs = require('./modules/_glossary')
 
 const getOptionQuestionData = require('../initdata/_questions.select')
 const state = require('../../state')
@@ -28,6 +29,12 @@ async function saveInputs() {
     case templateArray[1]: {
       console.log('> [input-robot] [Next input] Start questions for "resume article template"') 
       await getResumeArticleInputs()
+      console.log('> [input-robot] [Next input] Done')
+      break;
+    }
+    case templateArray[2]: {
+      console.log('> [input-robot] [Next input] Start questions for "glossary template"') 
+      await getGlossaryInputs()
       console.log('> [input-robot] [Next input] Done')
       break;
     }

@@ -1,8 +1,8 @@
-function build(slides, slideLenght, searchTerm, prefix) {
+function build(slides, slideLength, searchTerm, prefix) {
 
 // GENERAL
 const slideTemp = []
-for (let i = 0; i < slideLenght; i++) {
+for (let i = 0; i < slideLength; i++) {
   if (slides[i] != undefined) {
     const slideSentence = slides[i].text
     slideTemp.push(slideSentence)

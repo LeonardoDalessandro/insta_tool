@@ -1,16 +1,12 @@
 
 [IA start - TAGS] [static generated]
-#leonardo_d_alessandro #automacao #bot
+#leonardo_d_alessandro #automacao #bot #glossarioDev #glossarioCode #developer #dev #code #coding
 @leonardo_d_alessandro
-[IA start - CREDITS] [static generated]
+[IA finish - TAGS] [static generated]
 
 [IA start - TAGS] [dynamically generated]
-. #O React (também denominado React.js ou ReactJS) é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário (frontend) em páginas web.,
-. #É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais.,
-. #É utilizado nos sites da Netflix, Imgur, Feedly, Airbnb, SeatGeek, HelloSign, Walmart e outros,
-. #Em 2015, o Facebook anunciou o módulo React Native, que em conjunto com o React, possibilita o desenvolvimento de aplicativos para Android e iOS utilizando componentes de interface de usuário nativos de ambas plataformas, sem precisar recorrer ao HTML,
-. #Na pesquisa de 2018 sobre hábitos de desenvolvedores do site Stack Overflow, o React foi a terceira biblioteca ou framework mais citado pelos usuários e desenvolvedores profissionais, ficando atrás somente do Node.js e Angular, respectivamente.,
-. #[..],
-. #[..],
-[IA start - CREDITS] [dynamically generated]
-  
+. # undefined,
+. # undefined,
+. # undefined,
+. # undefined
+[IA finish - TAGS] [dynamically generated]

@@ -1,8 +1,8 @@
-function build(slides, slideLenght, mainTitle, author) {
+function build(slides, slideLength, mainTitle) {
 
 // GENERAL
 const slideTemp = []
-for (let i = 0; i < slideLenght; i++) {
+for (let i = 0; i < slideLength; i++) {
   if (slides[i] != undefined) {
     const slideSentence = slides[i].text
     slideTemp.push(slideSentence)
@@ -31,7 +31,6 @@ for (let i = 0; i < slideLenght; i++) {
   <variableSets  xmlns="&ns_vars;">
     <variableSet  locked="none" varSetName="binding1">
       <variables>
-        <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="author"></variable>
         <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titleMain"></variable>
         <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titleSlide1"></variable>
         <variable  category="http://ns.adobe.com/Flows/1.0/" trait="textcontent" varName="titleSlide2"></variable>
@@ -44,9 +43,7 @@ for (let i = 0; i < slideLenght; i++) {
       </variables>
       <v:sampleDataSets  xmlns="http://ns.adobe.com/GenericCustomNamespace/1.0/" xmlns:v="http://ns.adobe.com/Variables/1.0/">
         <v:sampleDataSet  dataSetName="templateMinimalInsta">
-          <author>
-						<p>${author}</p>
-					</author>
+
 					<titleMain>
 						<p>${mainTitle}</p>
 					</titleMain>

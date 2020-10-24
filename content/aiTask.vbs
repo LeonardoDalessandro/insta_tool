@@ -26,44 +26,8 @@
 ' 1) Get and open document
 '*************************************************************
 Set appRef = CreateObject("Illustrator.Application")
-appRef.Open("D:/www/TOOLS/insta/insta_tool/robots/adobe/template/logo_text/AITemplate.ai")
+appRef.Open("D:/www/TOOLS/insta/insta_tool/robots/adobe/template/glossary/AITemplate.ai")
 Set docRef = appRef.ActiveDocument
-
-    
-'*************************************************************
-' 2) Setting main color
-'*************************************************************
-
-Set inputColor = CreateObject("Illustrator.RGBColor")
-inputColor.Red = 10
-inputColor.Green = 20
-inputColor.Blue = 30
-
-For Each pathArt in docRef.PathItems
-  pathArt.Selected = True
-  pathArt.fillColor = inputColor
-Next
-
-    
-'*************************************************************
-' 3.1) Get logo
-' 3.2) Load logo
-' 3.3) Difine size and position
-' 3.4) Create text box
-' 3.5) Difine size and position
-' 3.6) Assign content
-'*************************************************************
-
-Set artboardRef = docRef.Artboards(1)
-rect = artboardRef.ArtboardRect
-
-Set myPlacedItem = docRef.PlacedItems.Add()
-myPlacedItem.File = "D:/www/TOOLS/insta/insta_tool/content/logo-1-original.png"
-
-myPlacedItem.Position = Array (rect(0) + 290.0, rect(0) - 159.2)
-myPlacedItem.Width = 500.0
-myPlacedItem.Height = 481.7
-myPlacedItem.Embed()
 
     
 '*************************************************************
@@ -81,7 +45,7 @@ docRef.SaveAs("D:/www/TOOLS/insta/insta_tool/content/ready.ai")
 Set fileSystemObject = CreateObject("Scripting.FileSystemObject")
 
 Dim I
-For I = 0 To 9
+For I = 0 To 6
   destFile = "D:/www/TOOLS/insta/insta_tool/content/img/ExportedArtboard" & (I+1)
   docRef.Artboards.SetActiveArtboardIndex(I)
   Set objExportOptions = CreateObject("Illustrator.ExportOptionsJPEG")

@@ -1,14 +1,10 @@
-function build(slideLenght, template) {
+function build() {
 
 const localToolPath = "D:/www/TOOLS/insta/insta_tool"
 
-const AIfileName = template
-const AIfileDir = '/robots/adobe/template/cover_text/'
+const AIfileName = 'AITemplate.ai'
+const AIfileDir = '/robots/adobe/template/glossary/'
 const AIFullPath = localToolPath+AIfileDir+AIfileName
-
-// GENERAL
-const slidesLenghtInternal = slideLenght
-const slidesLenght = slidesLenghtInternal + 2
 
 // COVER
 const logoDirPath = '/content/'
@@ -73,7 +69,7 @@ const VBSexport = `
 Set fileSystemObject = CreateObject("Scripting.FileSystemObject")
 
 Dim I
-For I = 0 To 9
+For I = 0 To 6
   destFile = "${exportFullPath}/ExportedArtboard" & (I+1)
   docRef.Artboards.SetActiveArtboardIndex(I)
   Set objExportOptions = CreateObject("Illustrator.ExportOptionsJPEG")

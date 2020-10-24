@@ -11,14 +11,14 @@ async function run() {
   const content = await state.load()
   const slides = content.slides
   const logo = content.downloadedImages.logo.selectedImage
-  const slideLenght = content.maximumSentences
+  const slideLength = content.maximumSentences
   const colorTheme = content.colorThemeRGB
   const searchTerm = content.searchTerm
   const prefix = content.prefix
 
   async function generateXML(){
     console.log(`> [adobe-robot] Writing .xml structure data ...`)  
-    return fs.writeFileSync(pathXML, xmlCode.build(slides, slideLenght, searchTerm, prefix))
+    return fs.writeFileSync(pathXML, xmlCode.build(slides, slideLength, searchTerm, prefix))
   }
 
   async function generateVBS(){

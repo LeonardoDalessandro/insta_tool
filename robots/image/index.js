@@ -23,6 +23,10 @@ async function robot() {
         console.log("> [image-robot] This template don't require images")
         break;
     }
+    case templateArray[2]: {
+        console.log("> [image-robot] This template don't require images")
+        break;
+    }
   }
 
   console.log('> [image-robot] Done')  

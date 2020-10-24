@@ -3,6 +3,7 @@ const getOptionQuestionData = require('../input/initdata/_questions.select')
 
 const logoTextTemplateGenerator = require('./template/logo_text/index.js')
 const coverTextTemplateGenerator = require('./template/cover_text/index.js')
+const glossaryTemplateGenerator = require('./template/glossary/index.js')
 
 async function run() {
   console.log(`> [adobe-robot] Writing Adobe Illustrator files based on selected template ...`)
@@ -24,6 +25,12 @@ async function run() {
         console.log(`> [adobe-robot] [Template resume article] Starting`)
         await coverTextTemplateGenerator.run()
         console.log(`> [adobe-robot] [Template resume article] Done`)
+        break;
+    }
+    case templateArray[2]: {
+        console.log(`> [adobe-robot] [Template glossary] Starting`)
+        await glossaryTemplateGenerator.run()
+        console.log(`> [adobe-robot] [Template glossary] Done`)
         break;
     }
   }
