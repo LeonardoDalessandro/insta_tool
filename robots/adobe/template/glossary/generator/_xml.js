@@ -1,8 +1,8 @@
-function build(slides, slideLength, mainTitle, author) {
+function build(slides, slideLenght, mainTitle, author) {
 
 // GENERAL
 const slideTemp = []
-for (let i = 0; i < slideLength; i++) {
+for (let i = 0; i < slideLenght; i++) {
   if (slides[i] != undefined) {
     const slideSentence = slides[i].text
     slideTemp.push(slideSentence)

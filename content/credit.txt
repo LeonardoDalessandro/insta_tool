@@ -1,0 +1,17 @@
+
+[IA start - CREDITS]
+- Fonte de conteúdo: Wikipedia
+- Imagem do logotipo: http://www.tipsoninterview.in/wp-content/uploads/2017/09/react-logo-300x289.png
+- Processamento de conteúdo: insta_tool BETA (https://github.com/LeonardoDalessandro/insta_tool)
+- Arquivos .jpg: Adobe Illustrator
+
+This project is based on
+"video-maker" bot project by @filipedeschamps (https://github.com/LeonardoDalessandro/video-maker)
+[IA finish - CREDITS]
+
+[IA start - CREDITS]
+#leonardo_d_alessandro #automacao #bot #javascript #jquery #frontend #js #ajax
+[IA start - CREDITS]
+
+@leonardo_d_alessandro 
+  

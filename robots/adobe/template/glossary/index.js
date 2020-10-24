@@ -13,7 +13,7 @@ async function run() {
   const content = await state.load()
 
   const slides = content.slides
-  const slideLength = content.maximumSentences
+  const slideLenght = content.maximumSentences
   const mainTitle = content.title
   const author = content.author
   const category = content.category
@@ -34,12 +34,12 @@ async function run() {
 
   async function generateXML(){
     console.log(`> [adobe-robot] Writing .xml structure data ...`)  
-    return fs.writeFileSync(pathXML, xmlCode.build(slides, slideLength, mainTitle, author))
+    return fs.writeFileSync(pathXML, xmlCode.build(slides, slideLenght, mainTitle, author))
   }
 
   async function generateVBS(){
     console.log(`> [adobe-robot] Writing .vbs structure data ...`)
-    return fs.writeFileSync(pathVBScript, vbsCode.build(slideLength, template))
+    return fs.writeFileSync(pathVBScript, vbsCode.build(slideLenght, template))
   }
 
   await generateXML()

@@ -1,11 +1,13 @@
-const fetchImages = require('./_getLogo.js')
+const generateCreditsFile = require('./credits/index.js')
+const generateTagsFile = require('./tags/index.js')
 
 async function robot() {
-  console.log('> [text-robot] Starting...')
+  console.log('> [robot-social] Starting...')
 
-  await fetchImages.getlogo()
+  await generateCreditsFile()
+  await generateTagsFile()
 
-  console.log('> [text-robot] Done')  
+  console.log('> [robot-social] Done')  
 }
 
 module.exports = robot

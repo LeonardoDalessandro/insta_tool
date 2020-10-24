@@ -1,4 +1,4 @@
-function build(slideLenght, template) {
+function build(slideLength, template) {
 
 const localToolPath = "D:/www/TOOLS/insta/insta_tool"
 
@@ -7,8 +7,8 @@ const AIfileDir = '/robots/adobe/template/cover_text/'
 const AIFullPath = localToolPath+AIfileDir+AIfileName
 
 // GENERAL
-const slidesLenghtInternal = slideLenght
-const slidesLenght = slidesLenghtInternal + 2
+const slidesLengthInternal = slideLength
+const slidesLength = slidesLengthInternal + 2
 
 // COVER
 const logoDirPath = '/content/'
