@@ -1,4 +1,4 @@
-async function build(logoUrl) {
+async function build() {
   const setText = `
 [IA start - CREDITS]
 - Fonte de conteúdo: Wikipedia
@@ -11,7 +11,7 @@ Essa ferramenta é baseada em
 (https://github.com/LeonardoDalessandro/video-maker)
 de @filipedeschamps
 
-Templete de conteúdo sugerido
+Conteúdo sugerido
 por @alves_beanca
 [IA finish - CREDITS]
 

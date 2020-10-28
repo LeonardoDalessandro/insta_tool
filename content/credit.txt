@@ -5,10 +5,13 @@
 - Processamento de conteúdo: insta_tool BETA (https://github.com/LeonardoDalessandro/insta_tool)
 - Arquivos .jpg: Adobe Illustrator
 
-This project is based on
-"video-maker" bot project by @filipedeschamps (https://github.com/LeonardoDalessandro/video-maker)
+Essa ferramenta é baseada em
+"video-maker" bot project
+(https://github.com/LeonardoDalessandro/video-maker)
+de @filipedeschamps
 
-Tempalte sudgested by @alves_beanca
+Conteúdo sugerido
+por @alves_beanca
 [IA finish - CREDITS]
 
 @leonardo_d_alessandro 

@@ -30,31 +30,31 @@
         <v:sampleDataSet  dataSetName="templateMinimalInsta">
 
 					<titleMain>
-						<p>API web</p>
+						<p>REST</p>
 					</titleMain>
 					<titleSlide1>
-						<p>API web</p>
+						<p>REST</p>
 					</titleSlide1>					
 					<titleSlide2>
-						<p>API web</p>
+						<p>REST</p>
 					</titleSlide2>
 					<titleSlide3>
-						<p>API web</p>
+						<p>REST</p>
 					</titleSlide3>
 					<titleSlide4>
-						<p>API web</p>
+						<p>REST</p>
 					</titleSlide4>
 					<sentenceSlide1>
-						<p>Uma Web API é uma interface de programação de aplicações (API) tanto para um servidor quanto um navegador.</p>
+						<p>Representational State Transfer (REST), em português Transferência Representacional de Estado, é um estilo de arquitetura de software que define um conjunto de restrições a serem usadas para a criação de web services (serviços Web).</p>
 					</sentenceSlide1>
 					<sentenceSlide2>
-						<p>É utilizada para se conseguir recuperar somente o valor necessitado num banco de dados de um site.</p>
+						<p>Os Web services que estão em conformidade com o estilo arquitetural REST, denominados Web services RESTful, fornecem interoperabilidade entre sistemas de computadores na Internet.</p>
 					</sentenceSlide2>
 					<sentenceSlide3>
-						<p>Uma web API server-side é uma interface programática consistente de um ou mais endpoints publicamente expostos para um sistema definido de mensagens pedido-resposta, tipicamente expressado em JSON ou XML, que é exposto via a internet—mais comumente por meio de um servidor web baseado em HTTP.</p>
+						<p>Os Web services RESTful permitem que os sistemas solicitantes acessem e manipulem representações textuais de recursos da Web usando um conjunto uniforme e predefinido de operações sem estado.</p>
 					</sentenceSlide3>
 					<sentenceSlide4>
-						<p>[..]</p>
+						<p>Outros tipos de Web services, como Web services SOAP, expõem seus próprios conjuntos de operações arbitrários.[1]"Recursos da Web" foram definidos pela primeira vez na World Wide Web como documentos ou arquivos identificados por suas URLs.</p>
 					</sentenceSlide4>
         </v:sampleDataSet>
       </v:sampleDataSets>
